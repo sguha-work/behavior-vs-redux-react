@@ -15,6 +15,7 @@ export default function ReduxButtonCompoent() {
     }, [state.counter.data]);
     const increaseValue = () => {
         currentValue += 1;
+        console.time();
         dispatch(setCounter(currentValue));
     };
     return (
